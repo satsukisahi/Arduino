@@ -147,6 +147,8 @@ void timer0_ISR (void) {
     delay(2);
     writeCommand(0x0C);
     delay(2);
+    LCD_STRING=String((int)artime/3600)+':'+String(((int)artime%3600)/60);
+    LCD_DISP_8_2();
     lcd=0;
   }
 
@@ -161,7 +163,9 @@ void timer0_ISR (void) {
   /*   Serial.printf("%02d:%02d:%02d\n",
   tm->tm_hour, tm->tm_min, tm->tm_sec); */
   sec=int(tm->tm_hour)*3600+int(tm->tm_min)*60+int(tm->tm_sec);
-  if(sec>87390)lastar=-87400;
+  if(sec>87300){
+    lastar=-87400;
+  }
   Serial.print(sec);
   Serial.print(" ");
   Serial.println(artime);

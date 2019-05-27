@@ -1,6 +1,8 @@
 {
-    "board": "esp8266:esp8266:thingdev",
-    "configuration": "CpuFrequency=80,VTable=flash,FlashSize=512K0,LwIPVariant=v2mss536,Debug=Disabled,DebugLevel=None____,FlashErase=none,UploadSpeed=115200",
-    "port": "COM4",
-    "sketch": "ifttt\\iftttnoled.ino"
+    "board": "esp32:esp32:esp32",
+    "configuration": "PSRAM=disabled,PartitionScheme=default,CPUFreq=240,FlashMode=qio,FlashFreq=80,FlashSize=4M,UploadSpeed=921600,DebugLevel=none",
+    "port": "COM9",
+    "sketch": "ifttt\\iftttnoled.ino",
+    "programmer": "USBasp",
+    "output": "../ArduinoOutput"
 }

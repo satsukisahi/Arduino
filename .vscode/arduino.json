@@ -1,7 +1,7 @@
 {
-    "board": "esp32:esp32:esp32",
-    "configuration": "PSRAM=disabled,PartitionScheme=default,CPUFreq=240,FlashMode=qio,FlashFreq=80,FlashSize=4M,UploadSpeed=921600,DebugLevel=none",
-    "sketch": "esp32webser\\esp32webser.ino",
+    "board": "esp8266:esp8266:thingdev",
+    "configuration": "CpuFrequency=80,VTable=flash,FlashSize=512K0,LwIPVariant=v2mss536,Debug=Disabled,DebugLevel=None____,FlashErase=none,UploadSpeed=115200",
+    "sketch": "0802\\0802.ino",
     "port": "COM3",
     "programmer": "USBasp",
     "output": "../ArduinoOutput"

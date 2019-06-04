@@ -24,7 +24,6 @@ bool lcd=1;
 
 // メッセージを受け取ったらシリアルにプリント
 void callback(char* topic, byte* payload, unsigned int length) {
- 
   // PubSubClient.hで定義されているMQTTの最大パケットサイズ
   char buffer[MQTT_MAX_PACKET_SIZE];
 

@@ -2,7 +2,7 @@
 #define MQTT_MAX_PACKET_SIZE 1024
 #include <PubSubClient.h>
 #include <ArduinoJson.h>
-#include "config.h"
+#include <config.h>
 #include <Wire.h>
 #include <time.h>
 #include <string>
